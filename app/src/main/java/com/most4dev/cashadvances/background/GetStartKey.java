@@ -57,7 +57,7 @@ public class GetStartKey extends AsyncTask<Map<String, String>, Void, String> {
 
     @Override
     protected void onPostExecute(String strPostExecuteStartKey) {
-        if (strPostExecuteStartKey.contains("1ok")){
+        if (strPostExecuteStartKey == null || strPostExecuteStartKey.contains("1ok")){
             liveDataForecastStartKey.postValue("1ok");
             Config.Companion.setURL_PAYDAY_LOANS(
                     JSONManager.Companion.parseJsonFormatPayDayLink(strPostExecuteStartKey));
