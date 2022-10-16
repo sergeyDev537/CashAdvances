@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.most4dev.cashadvances.Config
 import com.most4dev.cashadvances.R
+import com.most4dev.cashadvances.managers.URLLoansManager
 import kotlinx.android.synthetic.main.fragment_menu.*
 
 class MenuFragment : Fragment() {
@@ -32,7 +34,7 @@ class MenuFragment : Fragment() {
 
     private fun clickButtonsMenu() {
         buttonPaydayLoansMenu.setOnClickListener {
-            //TODO
+            URLLoansManager.openURLEmbeddedBrowserLoans(requireContext(), Config.URL_PAYDAY_LOANS)
         }
 
         buttonInstallmentLoansMenu.setOnClickListener {
