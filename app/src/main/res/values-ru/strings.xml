@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Денежные авансы</string>
+
+    <!--CONNECTION-->
+    <string name="error_connection">Ошибка подключения</string>
+
+    <!--LIST ITEMS-->
+    <string name="payday_loans">Кредиты до зарплаты</string>
+    <string name="installment_loans">Кредиты в рассрочку</string>
+    <string name="loan_calculator">Кредитный калькулятор</string>
+    <string name="about_payday_loans">О кредитах до зарплаты</string>
+    <string name="instant_forms">Мгновенные формы</string>
+    <string name="legality_us">Законность в США</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+
+    <!--Loan Calculator-->
+    <string name="description_calculator">Периодический возврат фиксированной суммы. \n
+        Составной: Ежемесячно (годовые)\n
+        Окупаемость: каждый месяц</string>
+    <string name="loan_amount">Сумма кредита:</string>
+    <string name="loan_term">Срок кредита:</string>
+    <string name="interest_rate">Процентная ставка, %:</string>
+    <string name="payment_every_month">Оплата каждый месяц:</string>
+    <string name="total_payments">Всего платежей:</string>
+    <string name="total_interest">Общий интерес:</string>
+
+    <!--LANGUAGE-->
+    <string name="language">Язык</string>
+    <string name="choose_language">Выберите язык:</string>
+
+    <string name="english">Английский</string>
+    <string name="russian">Русский</string>
+    <string name="spanish">Испанский</string>
+
+    <string name="ru" translatable="false" tools:ignore="Untranslatable">ru</string>
+
+    <string name="gb" translatable="false" tools:ignore="Untranslatable">US</string>
+    <string name="sp" translatable="false" tools:ignore="Untranslatable">ES</string>
+
+    <!--CONTENT DESCRIPTION-->
+    <string name="cd_image_fragment_menu">image fragment menu</string>
+
+</resources>

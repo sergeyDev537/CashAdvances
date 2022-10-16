@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.most4dev.cashadvances.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_loanCalculatorFragment"
+            app:destination="@id/loanCalculatorFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_aboutPaydayFragment"
+            app:destination="@id/aboutPaydayFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loanCalculatorFragment"
+        android:name="com.most4dev.cashadvances.fragments.LoanCalculatorFragment"
+        android:label="fragment_loan_calculator"
+        tools:layout="@layout/fragment_loan_calculator" />
+
+    <fragment
+        android:id="@+id/aboutPaydayFragment"
+        android:name="com.most4dev.cashadvances.fragments.AboutPaydayFragment"
+        android:label="fragment_about_payday"
+        tools:layout="@layout/fragment_about_payday">
+        <action
+            android:id="@+id/action_aboutPaydayFragment_to_aboutPayDayItemFragment"
+            app:destination="@id/aboutPayDayItemFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutPayDayItemFragment"
+        android:name="com.most4dev.cashadvances.fragments.AboutPayDayItemFragment"
+        android:label="fragment_about_pay_day_item"
+        tools:layout="@layout/fragment_about_pay_day_item">
+    </fragment>
+
+</navigation>

@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">CashAdvances</string>
+
+    <!--CONNECTION-->
+    <string name="error_connection">Error connection</string>
+
+    <!--LIST ITEMS-->
+    <string name="payday_loans">Payday loans</string>
+    <string name="installment_loans">Installment loans</string>
+    <string name="loan_calculator">Loan Calculator</string>
+    <string name="about_payday_loans">About payday loans</string>
+    <string name="instant_forms">Instant forms</string>
+    <string name="legality_us">Legality in the US</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!--Loan Calculator-->
+    <string name="description_calculator">Paying Back a Fixed Amount Periodically. \n
+        Compound: Monthly (APR) \n
+        Pay Back: Every Month</string>
+    <string name="loan_amount">Loan amount:</string>
+    <string name="loan_term">Loan term:</string>
+    <string name="interest_rate">Interest rate, %:</string>
+    <string name="payment_every_month">Payment every month:</string>
+    <string name="total_payments">Total payments:</string>
+    <string name="total_interest">Total interest:</string>
+
+    <!--LANGUAGE-->
+    <string name="language">Language</string>
+    <string name="choose_language">Choose language:</string>
+
+    <string name="english">English</string>
+    <string name="russian">Russian</string>
+    <string name="spanish">Spanish</string>
+
+    <string name="ru" translatable="false">ru</string>
+
+    <string name="gb" translatable="false">US</string>
+    <string name="sp" translatable="false">ES</string>
+
+
+    <!--CONTENT DESCRIPTION-->
+    <string name="cd_image_fragment_menu">image fragment menu</string>
+
 </resources>
