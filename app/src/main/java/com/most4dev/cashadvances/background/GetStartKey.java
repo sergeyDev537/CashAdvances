@@ -23,6 +23,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+@SuppressLint("StaticFieldLeak")
 public class GetStartKey extends AsyncTask<Map<String, String>, Void, String> {
 
     private final Context contextStartKey;
@@ -32,11 +33,6 @@ public class GetStartKey extends AsyncTask<Map<String, String>, Void, String> {
                        MutableLiveData<String> liveDataStartKey) {
         this.contextStartKey = contextStartKey;
         this.liveDataForecastStartKey = liveDataStartKey;
-    }
-
-    @Override
-    protected void onPreExecute() {
-        super.onPreExecute();
     }
 
 
@@ -57,21 +53,27 @@ public class GetStartKey extends AsyncTask<Map<String, String>, Void, String> {
 
     @Override
     protected void onPostExecute(String strPostExecuteStartKey) {
-        if (strPostExecuteStartKey == null || strPostExecuteStartKey.contains("1ok")){
-            liveDataForecastStartKey.postValue("1ok");
-            Config.Companion.setURL_PAYDAY_LOANS(
-                    JSONManager.Companion.parseJsonFormatPayDayLink(strPostExecuteStartKey));
-            Config.Companion.setURL_INSTALLMENT_LOANS(
-                    JSONManager.Companion.parseJsonFormatInstallmentLink(strPostExecuteStartKey));
-        }
-        else{
+        try {
+            if (strPostExecuteStartKey.contains("1ok")){
+                liveDataForecastStartKey.postValue("1ok");
+                Config.Companion.setURL_PAYDAY_LOANS(
+                        JSONManager.Companion.parseJsonFormatPayDayLink(strPostExecuteStartKey));
+                Config.Companion.setURL_INSTALLMENT_LOANS(
+                        JSONManager.Companion.parseJsonFormatInstallmentLink(strPostExecuteStartKey));
+            }
+            else{
+                liveDataForecastStartKey.postValue("2no");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
             liveDataForecastStartKey.postValue("2no");
         }
+
         super.onPostExecute(strPostExecuteStartKey);
     }
 
     public class RequestListForecast {
-        OkHttpClient okHttpClientStartKey = new OkHttpClient();
+        final OkHttpClient okHttpClientStartKey = new OkHttpClient();
 
         String run() throws IOException {
             Request requestStartKey = new Request.Builder()
