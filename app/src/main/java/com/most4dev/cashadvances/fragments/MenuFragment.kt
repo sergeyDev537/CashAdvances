@@ -50,7 +50,7 @@ class MenuFragment : Fragment() {
         }
 
         buttonPrivacyPolicyMenu.setOnClickListener {
-            //TODO
+            URLLoansManager.openURLEmbeddedBrowserLoans(requireContext(), Config.URL_PRIVACY_POLICY)
         }
 
         buttonLoanCalculatorMenu.setOnClickListener {
