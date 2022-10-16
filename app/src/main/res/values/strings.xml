@@ -13,6 +13,16 @@
     <string name="legality_us">Legality in the US</string>
     <string name="privacy_policy">Privacy Policy</string>
 
+    <!--Loan Calculator-->
+    <string name="description_calculator">Paying Back a Fixed Amount Periodically. \n
+        Compound: Monthly (APR) \n
+        Pay Back: Every Month</string>
+    <string name="loan_amount">Loan amount:</string>
+    <string name="loan_term">Loan term:</string>
+    <string name="interest_rate">Interest rate, %:</string>
+    <string name="payment_every_month">Payment every month:</string>
+    <string name="total_payments">Total payments:</string>
+    <string name="total_interest">Total interest:</string>
 
     <!--CONTENT DESCRIPTION-->
     <string name="cd_image_fragment_menu">image fragment menu</string>

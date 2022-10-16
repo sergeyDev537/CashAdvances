@@ -54,7 +54,9 @@ class MenuFragment : Fragment() {
         }
 
         buttonLoanCalculatorMenu.setOnClickListener {
-            //TODO
+            (requireActivity() as MainActivity).navControllerCashAdvance.navigate(
+                R.id.action_menuFragment_to_loanCalculatorFragment
+            )
         }
 
         buttonAboutPaydayMenu.setOnClickListener {

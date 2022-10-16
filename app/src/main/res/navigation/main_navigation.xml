@@ -11,9 +11,18 @@
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu">
         <action
+            android:id="@+id/action_menuFragment_to_loanCalculatorFragment"
+            app:destination="@id/loanCalculatorFragment" />
+        <action
             android:id="@+id/action_menuFragment_to_aboutPaydayFragment"
             app:destination="@id/aboutPaydayFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/loanCalculatorFragment"
+        android:name="com.most4dev.cashadvances.fragments.LoanCalculatorFragment"
+        android:label="fragment_loan_calculator"
+        tools:layout="@layout/fragment_loan_calculator" />
 
     <fragment
         android:id="@+id/aboutPaydayFragment"
