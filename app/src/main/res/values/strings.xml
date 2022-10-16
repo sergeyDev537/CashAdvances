@@ -32,9 +32,7 @@
     <string name="russian">Russian</string>
     <string name="spanish">Spanish</string>
 
-    <string name="en" translatable="false">en</string>
     <string name="ru" translatable="false">ru</string>
-    <string name="es" translatable="false">es</string>
 
     <string name="gb" translatable="false">US</string>
     <string name="sp" translatable="false">ES</string>

@@ -20,7 +20,7 @@ class CustomDialogLoansManager {
         }
 
         fun createListLanguage(context: Context): ArrayList<ModelLanguageLoans> {
-            var listLanguage = ArrayList<ModelLanguageLoans>()
+            val listLanguage = ArrayList<ModelLanguageLoans>()
             listLanguage.add(
                 ModelLanguageLoans(
                     context.getString(R.string.english),

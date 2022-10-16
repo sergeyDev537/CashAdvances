@@ -11,7 +11,7 @@ class URLLoansManager {
         fun openURLEmbeddedBrowserLoans(contextLoans: Context, urlLoans: String){
             val builderLoans = CustomTabsIntent.Builder()
             val customTabsIntentLoans = builderLoans.build()
-            customTabsIntentLoans.launchUrl(contextLoans, Uri.parse(urlLoans));
+            customTabsIntentLoans.launchUrl(contextLoans, Uri.parse(urlLoans))
         }
 
     }

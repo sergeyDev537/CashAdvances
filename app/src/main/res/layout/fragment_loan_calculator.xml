@@ -133,7 +133,6 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintEditDataLoans" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintTotalDataLoans"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"

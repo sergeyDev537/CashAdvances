@@ -7,7 +7,6 @@
     tools:context=".fragments.MenuFragment">
 
     <ImageView
-        android:id="@+id/imageViewMenu"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:contentDescription="@string/cd_image_fragment_menu"
