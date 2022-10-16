@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Adelanto en efectivo</string>
+
+    <!--CONNECTION-->
+    <string name="error_connection">Error de conexión</string>
+
+    <!--LIST BUTTONS-->
+    <string name="payday_loans">Préstamos de día de pago</string>
+    <string name="installment_loans">Préstamos a plazos</string>
+    <string name="loan_calculator">Calculadora de préstamo</string>
+    <string name="about_payday_loans">Acerca de los préstamos de día de pago</string>
+    <string name="instant_forms">Formularios instantáneos</string>
+    <string name="legality_us">Legalidad en los EE.UU.</string>
+    <string name="privacy_policy">Política de privacidad</string>
+
+    <!--Loan Calculator-->
+    <string name="description_calculator">Reembolso de una cantidad fija periódicamente. \norte
+        Compuesto: Mensual (APR) \n
+        Reembolso: cada mes</string>
+    <string name="loan_amount">Monto del préstamo:</string>
+    <string name="loan_term">Plazo del préstamo:</string>
+    <string name="interest_rate">Tasa de interés, %:</string>
+    <string name="payment_every_month">Pago todos los meses:</string>
+    <string name="total_payments">Pagos totales:</string>
+    <string name="total_interest">Interés total:</string>
+
+    <!--LANGUAGE-->
+    <string name="language">Lengua</string>
+    <string name="choose_language">Elige lengua:</string>
+
+    <string name="english">Inglés</string>
+    <string name="russian">Ruso</string>
+    <string name="spanish">Español</string>
+
+    <string name="ru" translatable="false" tools:ignore="Untranslatable">ru</string>
+
+    <string name="gb" translatable="false" tools:ignore="Untranslatable">US</string>
+    <string name="sp" translatable="false" tools:ignore="Untranslatable">ES</string>
+
+    <!--CONTENT DESCRIPTION-->
+    <string name="cd_image_fragment_menu">image fragment menu</string>
+
+</resources>
