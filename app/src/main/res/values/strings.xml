@@ -24,9 +24,23 @@
     <string name="total_payments">Total payments:</string>
     <string name="total_interest">Total interest:</string>
 
+    <!--LANGUAGE-->
+    <string name="language">Language</string>
+    <string name="choose_language">Choose language:</string>
+
+    <string name="english">English</string>
+    <string name="russian">Russian</string>
+    <string name="spanish">Spanish</string>
+
+    <string name="en" translatable="false">en</string>
+    <string name="ru" translatable="false">ru</string>
+    <string name="es" translatable="false">es</string>
+
+    <string name="gb" translatable="false">US</string>
+    <string name="sp" translatable="false">ES</string>
+
+
     <!--CONTENT DESCRIPTION-->
     <string name="cd_image_fragment_menu">image fragment menu</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
