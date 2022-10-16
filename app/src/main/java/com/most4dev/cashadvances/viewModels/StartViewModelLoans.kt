@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.most4dev.cashadvances.background.GetStartKey
 
 class StartViewModelLoans(application: Application) : AndroidViewModel(application) {
 
@@ -13,7 +14,12 @@ class StartViewModelLoans(application: Application) : AndroidViewModel(applicati
             LiveData<String>? {
         if (dataForecastCashAdvance == null) {
             dataForecastCashAdvance = MutableLiveData()
-            //TODO background files
+            val asyncIntCashAdvance =
+                GetStartKey(
+                    getApplication(),
+                    dataForecastCashAdvance
+                )
+            asyncIntCashAdvance.execute(mutableMapOf<String, String>())
         }
         return dataForecastCashAdvance
     }
