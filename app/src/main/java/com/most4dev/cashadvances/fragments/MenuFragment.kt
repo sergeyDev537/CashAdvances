@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.most4dev.cashadvances.Config
 import com.most4dev.cashadvances.R
+import com.most4dev.cashadvances.activity.MainActivity
 import com.most4dev.cashadvances.managers.URLLoansManager
 import kotlinx.android.synthetic.main.fragment_menu.*
 
@@ -54,7 +55,9 @@ class MenuFragment : Fragment() {
         }
 
         buttonAboutPaydayMenu.setOnClickListener {
-            //TODO
+            (requireActivity() as MainActivity).navControllerCashAdvance.navigate(
+                R.id.action_menuFragment_to_aboutPaydayFragment
+            )
         }
     }
 
