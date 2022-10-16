@@ -40,11 +40,6 @@ public class GetAboutTheme extends AsyncTask<Map<String, String>, Void, String> 
         this.liveDataAboutTheme = liveDataAboutTheme;
     }
 
-    @Override
-    protected void onPreExecute() {
-        super.onPreExecute();
-    }
-
 
     @SafeVarargs
     @Override
@@ -82,7 +77,7 @@ public class GetAboutTheme extends AsyncTask<Map<String, String>, Void, String> 
 
 
     public class RequestListTheme {
-        OkHttpClient okHttpClientAboutTheme = new OkHttpClient();
+        final OkHttpClient okHttpClientAboutTheme = new OkHttpClient();
 
         String run() throws IOException {
             Request requestAboutTheme = new Request.Builder()

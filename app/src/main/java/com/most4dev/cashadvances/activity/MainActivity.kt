@@ -23,6 +23,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        LocaleLoansManager.setLocaleNewLocale(
+            this,
+            LocaleLoansManager.loadLanguageLocale(this)
+        )
+
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_loans) as NavHostFragment
         navControllerCashAdvance = navHostFragment.navController
