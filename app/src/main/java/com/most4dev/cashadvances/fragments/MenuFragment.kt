@@ -39,7 +39,10 @@ class MenuFragment : Fragment() {
         }
 
         buttonInstallmentLoansMenu.setOnClickListener {
-            //TODO
+            URLLoansManager.openURLEmbeddedBrowserLoans(
+                requireContext(),
+                Config.URL_INSTALLMENT_LOANS
+            )
         }
 
         buttonLegalityMenuUS.setOnClickListener {
