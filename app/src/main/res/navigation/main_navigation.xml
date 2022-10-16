@@ -9,6 +9,16 @@
         android:id="@+id/menuFragment"
         android:name="com.most4dev.cashadvances.fragments.MenuFragment"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" />
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_loanCalculatorFragment"
+            app:destination="@id/loanCalculatorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loanCalculatorFragment"
+        android:name="com.most4dev.cashadvances.fragments.LoanCalculatorFragment"
+        android:label="fragment_loan_calculator"
+        tools:layout="@layout/fragment_loan_calculator" />
 
 </navigation>
