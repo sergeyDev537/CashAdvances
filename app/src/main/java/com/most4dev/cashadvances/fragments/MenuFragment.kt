@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.most4dev.cashadvances.Config
 import com.most4dev.cashadvances.R
+import com.most4dev.cashadvances.activity.MainActivity
 import com.most4dev.cashadvances.managers.URLLoansManager
 import kotlinx.android.synthetic.main.fragment_menu.*
 
@@ -38,11 +39,14 @@ class MenuFragment : Fragment() {
         }
 
         buttonInstallmentLoansMenu.setOnClickListener {
-            //TODO
+            URLLoansManager.openURLEmbeddedBrowserLoans(
+                requireContext(),
+                Config.URL_INSTALLMENT_LOANS
+            )
         }
 
         buttonLegalityMenuUS.setOnClickListener {
-            //TODO
+            URLLoansManager.openURLEmbeddedBrowserLoans(requireContext(), Config.URL_LEGALITY_US)
         }
 
         buttonPrivacyPolicyMenu.setOnClickListener {
@@ -50,11 +54,15 @@ class MenuFragment : Fragment() {
         }
 
         buttonLoanCalculatorMenu.setOnClickListener {
-            //TODO
+            (requireActivity() as MainActivity).navControllerCashAdvance.navigate(
+                R.id.action_menuFragment_to_loanCalculatorFragment
+            )
         }
 
         buttonAboutPaydayMenu.setOnClickListener {
-            //TODO
+            (requireActivity() as MainActivity).navControllerCashAdvance.navigate(
+                R.id.action_menuFragment_to_aboutPaydayFragment
+            )
         }
     }
 
