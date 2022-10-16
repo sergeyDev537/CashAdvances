@@ -39,7 +39,10 @@ class MenuFragment : Fragment() {
         }
 
         buttonInstallmentLoansMenu.setOnClickListener {
-            //TODO
+            URLLoansManager.openURLEmbeddedBrowserLoans(
+                requireContext(),
+                Config.URL_INSTALLMENT_LOANS
+            )
         }
 
         buttonLegalityMenuUS.setOnClickListener {
@@ -57,7 +60,9 @@ class MenuFragment : Fragment() {
         }
 
         buttonAboutPaydayMenu.setOnClickListener {
-            //TODO
+            (requireActivity() as MainActivity).navControllerCashAdvance.navigate(
+                R.id.action_menuFragment_to_aboutPaydayFragment
+            )
         }
     }
 
