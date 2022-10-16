@@ -42,7 +42,7 @@ class MenuFragment : Fragment() {
         }
 
         buttonLegalityMenuUS.setOnClickListener {
-            //TODO
+            URLLoansManager.openURLEmbeddedBrowserLoans(requireContext(), Config.URL_LEGALITY_US)
         }
 
         buttonPrivacyPolicyMenu.setOnClickListener {

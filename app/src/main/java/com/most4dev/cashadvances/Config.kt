@@ -8,6 +8,7 @@ class Config {
 
         var URL_PAYDAY_LOANS = ""
         var URL_INSTALLMENT_LOANS = ""
+        const val URL_LEGALITY_US = "https://olimpic365loans.com/delta/legality.html"
 
     }
 
