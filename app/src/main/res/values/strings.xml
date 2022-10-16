@@ -4,4 +4,17 @@
     <!--CONNECTION-->
     <string name="error_connection">Error connection</string>
 
+    <!--LIST ITEMS-->
+    <string name="payday_loans">Payday loans</string>
+    <string name="installment_loans">Installment loans</string>
+    <string name="loan_calculator">Loan Calculator</string>
+    <string name="about_payday_loans">About payday loans</string>
+    <string name="instant_forms">Instant forms</string>
+    <string name="legality_us">Legality in the US</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+
+    <!--CONTENT DESCRIPTION-->
+    <string name="cd_image_fragment_menu">image fragment menu</string>
+
 </resources>
